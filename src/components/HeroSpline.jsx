@@ -1,4 +1,5 @@
 import Spline from '@splinetool/react-spline';
+import { Link } from 'react-router-dom';
 
 export default function HeroSpline() {
   return (
@@ -19,8 +20,8 @@ export default function HeroSpline() {
           Jelajahi konsep limit, turunan, dan integral dengan animasi 3D yang responsif, contoh visual, dan kuis yang dibuat otomatis.
         </p>
         <div className="mt-8 flex items-center justify-center gap-3">
-          <a href="#materi" className="rounded-lg bg-black text-white px-5 py-3 text-sm font-medium shadow hover:shadow-md transition">Jelajahi Materi</a>
-          <a href="#quiz" className="rounded-lg border border-black/10 bg-white px-5 py-3 text-sm font-medium hover:border-black/20 transition">Coba Kuis</a>
+          <Link to="/materi" className="rounded-lg bg-black text-white px-5 py-3 text-sm font-medium shadow hover:shadow-md transition">Jelajahi Materi</Link>
+          <Link to="/soal" className="rounded-lg border border-black/10 bg-white px-5 py-3 text-sm font-medium hover:border-black/20 transition">Coba Kuis</Link>
         </div>
       </div>
     </section>
